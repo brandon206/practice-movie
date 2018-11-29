@@ -1,12 +1,21 @@
 import React from 'react';
-import '../assets/css/app.css';
-import logo from '../assets/images/logo.svg';
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize";
+import {Route} from 'react-router-dom';
+import Home from "./home";
+import Nav from './nav';
+import Quotes from './quotes';
+import SignIn from './sign-in';
+import SignUp from './sign-up';
 
 const App = () => (
     <div>
-        <div className="app">
-            <img src={logo} className="logo rotate"/>
-            <h1>Welcome to React</h1>
+        <Nav/>
+        <div className = "container">
+            <Route exact path = "/" component = {Home}/>
+            <Route path = "/quotes" component = {Quotes}/>
+            <Route path = "/sign-in" component = {SignIn}/>
+            <Route path = "/sign-up" component = {SignUp}/>
         </div>
     </div>
 );
