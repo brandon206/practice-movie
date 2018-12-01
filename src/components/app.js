@@ -4,7 +4,7 @@ import "materialize-css/dist/js/materialize";
 import {Route} from 'react-router-dom';
 import Home from "./home";
 import Nav from './nav';
-import Quotes from './quotes';
+import PopularGames from './popular-games';
 import SignIn from './sign-in';
 import SignUp from './sign-up';
 
@@ -13,7 +13,7 @@ const App = () => (
         <Nav/>
         <div className = "container">
             <Route exact path = "/" component = {Home}/>
-            <Route path = "/quotes" component = {Quotes}/>
+            <Route path = "/popular-games" component = {PopularGames}/>
             <Route path = "/sign-in" component = {SignIn}/>
             <Route path = "/sign-up" component = {SignUp}/>
         </div>

@@ -11,7 +11,7 @@ class Nav extends Component {
                             <Link to = "/">Home</Link>
                         </li>
                         <li>
-                            <Link to = "/quotes">Quotes</Link>
+                            <Link to = "/popular-games">Popular Games</Link>
                         </li>
                         <li>
                             <Link to = "/sign-in">Sign In</Link>
